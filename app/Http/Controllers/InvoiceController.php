@@ -66,6 +66,7 @@ class InvoiceController extends Controller
             $OrderdProduct->amount = $item["qty"];
             $OrderdProduct->save();
         }
+        session()->flush();
         session()->flash("message", "Order has been created with number: ". $invoice->id);
         return back();
         }

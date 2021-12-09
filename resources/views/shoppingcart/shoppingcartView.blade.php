@@ -53,7 +53,7 @@
                             </div>
                         </div>
                     @else
-                        You basket is still empty
+                        Your basket is empty
             @endif
         </div>
     </x-app-layout>
